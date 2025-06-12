@@ -95,35 +95,39 @@
           </button>
         </form>
         <div class="mx-2">
-          <button class="btn btn-danger">Login</button>
-          <button class="btn btn-danger">SignUp</button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#LoginModal"
+          >
+            Login
+          </button>
+          <button
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#signupModal"
+          >
+            SignUp
+          </button>
         </div>
       </div>
     </nav>
 
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
+    <!-- login Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="LoginModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="LoginModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="LoginModalLabel">
+              Login to bootstrap website
+            </h5>
             <button
               type="button"
               class="close"
@@ -133,7 +137,41 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -142,35 +180,26 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
+    <!-- signup Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="signupModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="signupModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="signupModalLabel">
+              Sign up to bootstrap website
+            </h5>
             <button
               type="button"
               class="close"
@@ -180,7 +209,46 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Creat Account
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -189,7 +257,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -334,7 +401,9 @@
             class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <strong class="d-inline-block mb-2 text-primary"
+                >Technology</strong
+              >
               <h3 class="mb-0">Meet Technology</h3>
               <div class="mb-1 text-muted">Nov 12</div>
               <p class="card-text mb-auto">
@@ -359,7 +428,9 @@
             class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <strong class="d-inline-block mb-2 text-success"
+                >collaborate</strong
+              >
               <h3 class="mb-0">Project Collaboration</h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">
